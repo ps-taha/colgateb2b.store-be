@@ -1,12 +1,17 @@
 {
-    "extends": "@vtex/tsconfig",
-    "compilerOptions": {
-      "noEmitOnError": false,
-      "lib": ["dom"],
-      "module": "esnext",
-      "moduleResolution": "node",
-      "target": "es2019"
-    },
-    "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
-  }
-  
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "lib": [
+      "dom"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2019"
+  },
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts"
+  ]
+}
