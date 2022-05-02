@@ -6,14 +6,15 @@
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
-    "assets": "0.x",
-    "graphql": "1.x",
     "node": "6.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
   "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
     {
       "name": "outbound-access",
       "attrs": {
@@ -22,5 +23,6 @@
       }
     }
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

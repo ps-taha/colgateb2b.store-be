@@ -42,7 +42,6 @@ declare global {
 export default new Service({
     clients,
     routes: {
-        // `customers` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
         createSubscription: method({
             POST: [createSubscr],
         }),

@@ -1,8 +1,14 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "co-body": "6.0.0",
+    "lodash": "4.17.21",
+    "moment": "2.29.3"
+  },
   "devDependencies": {
+    "@types/co-body": "0.0.3",
+    "@types/lodash": "4.14.182",
     "@types/node": "^12.0.0",
-    "@vtex/api": "6.45.10",
+    "@vtex/api": "6.45.12",
     "@vtex/tsconfig": "^0.5.6",
     "typescript": "3.9.7"
   },
