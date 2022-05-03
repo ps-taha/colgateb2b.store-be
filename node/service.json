@@ -9,6 +9,10 @@
       "createSubscription": {
         "path": "/_v/createSubscription",
         "public": true
+      },
+      "updateSubscription":{
+        "path": "/_v/updateSubscription",
+        "public": true
       }
     }
   }

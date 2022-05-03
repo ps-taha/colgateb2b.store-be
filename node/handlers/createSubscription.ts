@@ -15,7 +15,6 @@ export async function createSubscr(ctx: Context, next: () => Promise<any>) {
     ctx.status = 200;
     ctx.body = result;
     ctx.set("cache-control", "no-cache");
-
     await next();
 }
 
@@ -46,7 +45,7 @@ async function createSubscriptionJob(subscrOrders: any, ctx: Context) {
             id: order.DocumentId,
             fields: ["_all"]
         });
-    })
+      })
     );
     console.log('orderDetails', orderDetails);
     const orderJobs: any = orderDetails.map((order: any) => {

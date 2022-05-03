@@ -3,6 +3,7 @@ import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
 import { createSubscr } from './handlers/createSubscription'
+import { updatesubcrp } from './handlers/updateSubscrptionOrder'
 
 const TIMEOUT_MS = 800
 
@@ -44,6 +45,9 @@ export default new Service({
     routes: {
         createSubscription: method({
             POST: [createSubscr],
+        }),
+        updateSubscription: method({
+            PUT: [updatesubcrp],
         }),
     },
     graphql: {
