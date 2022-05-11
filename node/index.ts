@@ -4,6 +4,7 @@ import { LRUCache, method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { createSubscr } from './handlers/createSubscription'
 import { updatesubcrp } from './handlers/updateSubscrptionOrder'
+import intializeSchedular from './handlers/subscriptionSchedular'
 
 const TIMEOUT_MS = 800
 
@@ -38,6 +39,12 @@ declare global {
         code: number
     }
 }
+
+// let counter = 0;
+// setInterval(function () {
+//      console.log('Set Interval ...!!!!!!!!', counter++) 
+//     }, 500);
+intializeSchedular();
 
 // Export a service that defines route handlers and client options.
 export default new Service({

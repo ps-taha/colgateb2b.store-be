@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "@types/node-cron": "^3.0.1",
     "co-body": "6.0.0",
     "lodash": "4.17.21",
-    "moment": "2.29.3"
+    "moment": "2.29.3",
+    "node-cron": "^3.0.0"
   },
   "devDependencies": {
     "@types/co-body": "0.0.3",

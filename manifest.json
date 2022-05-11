@@ -1,11 +1,10 @@
 {
-  "name": "backend-course",
-  "vendor": "vtex",
-  "version": "0.0.2",
+  "vendor": "colgateb2b",
+  "name": "direct-backend",
+  "version": "0.1.1",
   "title": "Backend Course",
   "description": "Reference app for the Backend Course",
   "builders": {
-    "graphql": "1.x",
     "docs": "0.x",
     "node": "6.x"
   },
@@ -13,6 +12,9 @@
     "postreleasy": "vtex publish --verbose"
   },
   "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
     {
       "name": "outbound-access",
       "attrs": {
